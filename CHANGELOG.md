@@ -2,6 +2,7 @@
 
 - Relax the required ruby version to accommodate additional rubies
 - Switched the rubygems source to https
+- Removed the Gemfile.lock from version control
 
 # 1.1.1
 
