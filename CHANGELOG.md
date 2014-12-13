@@ -1,6 +1,7 @@
 # 1.1.2
 
 - Relax the required ruby version to accommodate additional rubies
+- Switched the rubygems source to https
 
 # 1.1.1
 
