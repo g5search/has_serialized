@@ -28,6 +28,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{Adds dynamic attributes through serialize.}
 
+  s.required_ruby_version = '>= 1.9.3'
+
   s.add_runtime_dependency 'activerecord', '~> 3.0'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec'

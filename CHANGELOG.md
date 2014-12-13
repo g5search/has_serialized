@@ -1,3 +1,7 @@
+# 1.1.2
+
+- Relax the required ruby version to accommodate additional rubies
+
 # 1.1.1
 
 - Do not set default value if the value has already been set (even if it was set to nil)
