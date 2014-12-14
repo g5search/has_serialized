@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'activerecord', '~> 3.0'
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rspec', '~> 2.14'
   s.add_development_dependency 'appraisal'
 end
 
