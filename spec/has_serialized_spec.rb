@@ -34,4 +34,14 @@ describe HasSerialized do
     expect(page.jake?).to be_true
     expect(page).to_not respond_to(:ka_tet?)
   end
+
+  describe "validations" do
+    class ValidatedPage < Page
+      validates :gunslinger, presence: true
+    end
+
+    let(:page) { ValidatedPage.new(gunslinger: nil) }
+
+    specify { expect(page).to be_invalid }
+  end
 end
