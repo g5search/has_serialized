@@ -3,6 +3,7 @@
 - Relax the required ruby version to accommodate additional rubies
 - Switched the rubygems source to https
 - Removed the Gemfile.lock from version control
+- Expanded the range of dependencies to test, trying to isolate a Rails 3.1 issue
 
 # 1.1.1
 
