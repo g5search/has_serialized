@@ -24,8 +24,12 @@ RSpec.configure do |config|
 end
 
 def reset_database
-  %W(pages categories).each do |table_name|
+  %W(pages categories settings).each do |table_name|
     ActiveRecord::Base.connection.execute("DROP TABLE IF EXISTS '#{table_name}'")
+  end
+  ActiveRecord::Base.connection.create_table(:settings) do |t|
+    t.string :name
+    t.text :serialized_attributes
   end
   ActiveRecord::Base.connection.create_table(:pages) do |t|
     t.string :name

@@ -44,4 +44,15 @@ describe HasSerialized do
 
     specify { expect(page).to be_invalid }
   end
+
+  describe "serialized_attributes" do
+    class Settings < ActiveRecord::Base
+      has_serialized :serialized_attributes, foo: 'bar'
+      validates :foo, presence: true
+    end
+
+    let(:invalid_settings) { Settings.new(foo: nil) }
+
+    specify { expect(invalid_settings).to be_invalid }
+  end
 end
